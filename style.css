@@ -1,0 +1,207 @@
+/*CSS reset settings here*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+    --fondo: #6f5964;
+    --cont: #ffffff;
+    --footer: #ffffff;
+    --color_font: #000000;
+    --font: poppins;
+    --a: #000000;
+    --title-back: #8a8895;
+    --buttons: #407d61;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--a);
+}
+
+/* estilos de defaul type boostrap */
+
+.mg-main {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 95%;
+}
+
+.w-50 {
+    flex: 1;
+}
+
+.pd-5 {
+    padding: 5px;
+}
+
+.pd-10 {
+    padding: 10px;
+}
+
+.mg-lft-20 {
+    margin-left: 20px;
+}
+
+.mg-top-10 {
+    margin-top: 10px;
+}
+
+.mg-top-20 {
+    margin-top: 20px;
+}
+
+.mg-top-30 {
+    margin-top: 30px;
+}
+
+.mg-bt-10 {
+    margin-bottom: 10px;
+}
+
+.mg-bt-20 {
+    margin-bottom: 20px;
+}
+
+.mg-bt-30 {
+    margin-bottom: 30px;
+}
+
+.fnt-38 {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.fnt-b-24 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.fnt-b-18 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.titles {
+    background: var(--title-back);
+    width: 100%;
+    color: var(--cont);
+}
+
+.gp-30 {
+    gap: 30px;
+}
+
+.gp-20 {
+    gap: 15px;
+}
+
+.button-cont {
+    justify-content: center;
+}
+
+.buttons {
+    padding: 10px;
+    color: var(--cont);
+    border: 1px solid var(--color_font);
+    background: var(--buttons);
+    border-radius: 12px;
+    font-family: poppins;
+    text-align: center;
+}
+
+/* cont principal  */
+.wrapper {
+    background-color: var(--fondo);
+    color: var(--color_font);
+    font-family: var(--font);
+}
+
+/* cabezera */
+header {
+    background-color: var(--cont);
+    align-items: center;
+}
+
+.nav {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* contenedor izquierdo */
+.navigation {
+    display: flex;
+    height: fit-content;
+    background-color: var(--cont);
+    min-height: 400px;
+}
+
+.navigation img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* contenedor derecho */
+.main_content {
+    min-height: 400px;
+    background-color: var(--cont);
+    margin-bottom: 20px;
+}
+
+.itemflex {
+    justify-content: space-between;
+    background: var(--cont);
+    flex: 1;
+    flex-direction: column;
+    min-height: auto;
+}
+
+.itemflex img {
+    width: 100%;
+}
+
+.tegnologies img {
+    width: 55px;
+}
+
+/* pie de pagina */
+footer {
+    text-align: center;
+    background: var(--footer);
+    padding: 20px;
+}
+
+.icons-info {
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+}
+
+footer img {
+    width: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .item-icons{
+        justify-content: center;
+    }
+
+    .flex-row{
+        flex-direction: column;
+    }
+
+}
